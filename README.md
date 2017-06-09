@@ -49,8 +49,8 @@ RFID 충돌방지기법, 질문트리 프로토콜
       - 반복해서 IDENTIFICATION이 ID개수 보다 작으면 실행됩니다.
   
 ■ 구현한 메인한수 설명
-      - srand((unsigned int)time(NULL));// 시드값을 바꿔준다.
-      - Simulator를 선언하고 start()를 호출해서 프로그램을 시작한다.
+  - srand((unsigned int)time(NULL));// 시드값을 바꿔준다.
+  - Simulator를 선언하고 start()를 호출해서 프로그램을 시작한다.
 
 ■ 실행화면
 
