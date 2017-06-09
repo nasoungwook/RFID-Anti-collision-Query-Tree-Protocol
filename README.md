@@ -5,16 +5,14 @@ RFID 충돌방지기법, 질문트리 프로토콜
 - 1개의 노드가 응답한 횟수를 0으로 초기화 한다.
   
 ■ 구현한 클래스 설명
-● Reader 클래스는 질의주머니를 만드는 클래스 입니다.
-1) 기본생성자를 실행시키고 cycle, IDLE, COLLISION을 0으로 초기화.
-2) void creatQuery(int tagNum)
-- 태그들에게 보내는 질의를 만드는 함수입니다.
-- 태그 ID가 응답한 수가 한번 초과되면 스택을 이용해서
-string temp와 “1”,“0”을 쌓습니다.
-- top을 temp에 넣습니다.
-- 위에 쌓은 “0”을 뺍니다.
-- 태그 ID가 1이거나 0이면 top을 temp에 저장시키고 
-스택에서 뺍니다.
+  - Reader 클래스는 질의주머니를 만드는 클래스 입니다.
+    1) 기본생성자를 실행시키고 cycle, IDLE, COLLISION을 0으로 초기화.
+    2) void creatQuery(int tagNum)
+      - 태그들에게 보내는 질의를 만드는 함수입니다.
+      - 태그 ID가 응답한 수가 한번 초과되면 스택을 이용해서 string temp와 “1”,“0”을 쌓습니다.
+      - top을 temp에 넣습니다.
+      - 위에 쌓은 “0”을 뺍니다.
+      - 태그 ID가 1이거나 0이면 top을 temp에 저장시키고 스택에서 뺍니다.
 3) string sendQuery()
 - 태그들에게 질의를 보내는 함수
 - cycle를 출력하고 string temp를 반환한다.
